@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Features | Auto Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./cars.css">
+</head>
+<body>
+    <header class="car-header">
+        <nav class="car-nav">
+            <div class="car-logo">SDrive</div>
+            <ul class="car-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./cars.html" class="active">Cars</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-panel">
+            <div class="hero-copy">
+                <p class="eyebrow">Featured Car Intelligence</p>
+                <h1 class="hero-title">Explore cars with style, speed, and clear detail</h1>
+                <p class="hero-text">Discover premium models, sleek features, and easy-to-read specs in a bright, friendly showcase.</p>
+                <div class="hero-actions">
+                    <a href="#models" class="hero-button">Browse Models</a>
+                    <a href="#details" class="hero-secondary">See Live Specs</a>
+                </div>
+            </div>
+            <div class="hero-visual" aria-hidden="true">
+                <div class="glow-ring"></div>
+                <div class="car-silhouette"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="models" class="section models-section">
+            <div class="section-title">
+                <span>Interactive Showcase</span>
+                <h2>Top Car Models & Highlights</h2>
+            </div>
+            <div class="model-grid"></div>
+        </section>
+
+        <section id="details" class="section details-section">
+            <div class="section-title">
+                <span>Feature Breakdown</span>
+                <h2>Selected Car Performance</h2>
+            </div>
+            <div class="details-panel">
+                <div class="details-card">
+                    <div class="details-badge">Live Preview</div>
+                    <img id="detailImage" class="detail-image" src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Selected car photo">
+                    <h3 id="detailName">Apex GT</h3>
+                    <p id="detailTagline" class="detail-tagline">The ultimate blend of speed, tech, and luxury.</p>
+                    <div class="detail-metrics">
+                        <div class="metric-item">
+                            <span>Top Speed</span>
+                            <strong id="detailTopSpeed">320 km/h</strong>
+                        </div>
+                        <div class="metric-item">
+                            <span>0-100 km/h</span>
+                            <strong id="detailAcceleration">2.9 sec</strong>
+                        </div>
+                        <div class="metric-item">
+                            <span>Range</span>
+                            <strong id="detailRange">520 km</strong>
+                        </div>
+                    </div>
+                    <div class="spec-list">
+                        <div><strong>Engine:</strong> <span id="detailEngine">V8 Twin Turbo</span></div>
+                        <div><strong>Drive:</strong> <span id="detailDrive">AWD</span></div>
+                        <div><strong>Interior:</strong> <span id="detailInterior">Carbon Fiber + Alcantara</span></div>
+                    </div>
+                    <p id="detailDescription" class="detail-description">A precision-built machine engineered for thrilling acceleration, luxurious comfort, and intelligent driver support.</p>
+                </div>
+                <div class="progress-card">
+                    <h3>Why this car stands out</h3>
+                    <div class="progress-group">
+                        <div class="progress-label">
+                            <span>Acceleration</span>
+                            <span class="progress-percentage" id="barAccelLabel">0%</span>
+                        </div>
+                        <div class="progress-bar"><span id="barAccel"></span></div>
+                    </div>
+                    <div class="progress-group">
+                        <div class="progress-label">
+                            <span>Handling</span>
+                            <span class="progress-percentage" id="barHandlingLabel">0%</span>
+                        </div>
+                        <div class="progress-bar"><span id="barHandling"></span></div>
+                    </div>
+                    <div class="progress-group">
+                        <div class="progress-label">
+                            <span>Tech</span>
+                            <span class="progress-percentage" id="barTechLabel">0%</span>
+                        </div>
+                        <div class="progress-bar"><span id="barTech"></span></div>
+                    </div>
+                    <div class="progress-group">
+                        <div class="progress-label">
+                            <span>Luxury</span>
+                            <span class="progress-percentage" id="barLuxuryLabel">0%</span>
+                        </div>
+                        <div class="progress-bar"><span id="barLuxury"></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./cars.js"></script>
+</body>
+</html>
