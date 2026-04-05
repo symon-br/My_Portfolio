@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initParallaxEffect();
     initNavbarAnimations();
     initCTAButtonEffects();
-    initThemeToggle();
     initPageLoadAnimation();
     initScrollProgressBar();
     initHeroBackground();
